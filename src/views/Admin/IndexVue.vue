@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-layout>
-      <v-navigation-drawer width="200" expand-on-hover v-model="drawer" :rail="rail" permanent>
+      <v-navigation-drawer width="200" :expand-on-hover="drawer=true" v-model="drawer" :rail="rail" permanent>
         <v-toolbar style="background-color: white;">
           <v-toolbar-title class="ma-3">
             <v-img src="https://res.cloudinary.com/dgtjdhrnq/image/upload/v1705460127/logo1_adshdl.png"></v-img>
@@ -9,11 +9,13 @@
         </v-toolbar>
         <v-divider></v-divider>
         <v-list density="compact" nav>
-          <v-list-item prepend-icon="mdi-apps" title="Sản phẩm" value="Sản phẩm"></v-list-item>
-          <v-list-item prepend-icon="mdi-account-group" title="User" value="User"></v-list-item>
+          <v-list-item prepend-icon="mdi-apps" title="Sản phẩm" value="Sản phẩm" to='product'></v-list-item>
+          <v-list-item prepend-icon="mdi-account-group" title="User" value="User" to='user'></v-list-item>
         </v-list>
       </v-navigation-drawer>
-      <v-app-bar color="rgb(247, 247, 247)" :elevation="0" rounded="0">
+      <v-main style="background-color: rgb(247, 247, 247);min-height: 100vh;">
+        <v-app-bar class="px-4" color="rgb(247, 247, 247)" :elevation="0" rounded="0">
+        <h3 class="pa-1">Danh sách sản phẩm</h3>
         <v-spacer></v-spacer>
         <v-btn>
           <v-badge content="5" color="red">
@@ -24,7 +26,6 @@
           <v-img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John"></v-img>
         </v-avatar>
       </v-app-bar>
-      <v-main style="background-color: rgb(247, 247, 247);min-height: 100vh;">
         <v-container>
           <v-row>
             <v-col cols="3">
@@ -142,7 +143,7 @@
                 </v-col>
               </v-row>
             </v-container>
-            <v-card-actions>
+            <v-card-actions class="pr-4">
               <v-spacer></v-spacer>
               <v-btn text="Hủy"></v-btn>
               <v-btn color="primary" variant="elevated" text="Thêm"></v-btn>

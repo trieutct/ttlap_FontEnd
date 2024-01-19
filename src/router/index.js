@@ -15,7 +15,18 @@ const routes = [
   {
     path: '/admin',
     name: 'admin',
-    component: () => import('../views/Admin/IndexVue.vue')
+    children: [
+      {
+        path: 'product',
+        component: () => import('../views/Admin/IndexVue.vue'),
+        props: true 
+      },
+      {
+        path: 'user',
+        component: () => import('../views/User/IndexVue.vue'),
+        props: true 
+      }
+    ]
   }
 ]
 
