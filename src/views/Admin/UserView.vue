@@ -1,5 +1,5 @@
 <template>
-    <v-app>
+    <!-- <v-app>
       <v-layout>
         <v-navigation-drawer width="200" :expand-on-hover="drawer=true" v-model="drawer" :rail="rail" permanent>
           <v-toolbar style="background-color: white;">
@@ -13,8 +13,8 @@
             <v-list-item prepend-icon="mdi-account-group" title="User" value="User" to='user'></v-list-item>
           </v-list>
         </v-navigation-drawer>
-        <v-main style="background-color: rgb(247, 247, 247);min-height: 100vh;">
-          <v-app-bar class="px-4" color="rgb(247, 247, 247)" :elevation="0" rounded="0">
+        <v-main style="background-color: rgb(247, 247, 247);min-height: 100vh;"> -->
+          <!-- <v-app-bar class="px-4" color="rgb(247, 247, 247)" :elevation="0" rounded="0">
           <h3 class="pa-1">Danh sách user</h3>
           <v-spacer></v-spacer>
           <v-btn>
@@ -26,7 +26,7 @@
             <v-img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John"></v-img>
           </v-avatar>
         </v-app-bar>
-          <v-container>
+          <v-container>-->
             <v-row>
               <v-col cols="3">
                 <v-text-field style="background-color: white;" density="compact" variant="outlined" label="Tìm kiếm"
@@ -114,8 +114,8 @@
                 </v-card>
               </v-col>
             </v-row>
-          </v-container>
-        </v-main>
+          <!-- </v-container> -->
+        <!-- </v-main> -->
         <v-dialog max-width="500px" v-model="showDialog">
           <v-card>
               <v-card-title style="font-weight: bold;"><h4>Tạo mới</h4></v-card-title>
@@ -150,8 +150,8 @@
               </v-card-actions>
             </v-card>
         </v-dialog>
-      </v-layout>
-    </v-app>
+      <!-- </v-layout> -->
+    <!-- </v-app> -->
   </template>
   <script>
   import NavigrationDrawerVue from '@/components/NavigrationDrawer.vue'

@@ -1,89 +1,45 @@
 <template>
-    <div class="body">
-        <h2>Inside Open Art</h2>
-        <div class="container">
-            <div>
-                <!-- <p><i class="fa-brands fa-figma"></i></p> -->
-                <p>4pt grid system</p>
-                <p>Base on 4pt gird system. Our UI KIT help you crate perfect white space</p>
-            </div>
-            <div>
-                <!-- <p><i class="fa-solid fa-pen"></i></p> -->
-                <p>4pt grid system</p>
-                <p>Base on 4pt gird system. Our UI KIT help you crate perfect white space</p>
-            </div>
-            <div>
-                <!-- <p><i class="fa-brands fa-autoprefixer"></i></i></p> -->
-                <p>4pt grid system</p>
-                <p>Base on 4pt gird system. Our UI KIT help you crate perfect white space</p>
-            </div>
-            <div>
-                <!-- <p><i class="fa-solid fa-circle-dot"></i></i></p> -->
-                <p>4pt grid system</p>
-                <p>Base on 4pt gird system. Our UI KIT help you crate perfect white space</p>
-            </div>
-            <div>
-                <!-- <p><i class="fa-solid fa-envelope"></i></i></p> -->
-                <p>4pt grid system</p>
-                <p>Base on 4pt gird system. Our UI KIT help you crate perfect white space</p>
-            </div>
-            <div>
-                <!-- <p><i class="fa-solid fa-star"></i></i></p> -->
-                <p>4pt grid system</p>
-                <p>Base on 4pt gird system. Our UI KIT help you crate perfect white space</p>
-            </div>
-        </div>
-    </div>
+    <v-app>
+        <v-layout>
+            <v-navigation-drawer width="200" :expand-on-hover="drawer=true" v-model="drawer" :rail="rail" permanent>
+        <v-toolbar style="background-color: white;">
+          <v-toolbar-title class="ma-3">
+            <v-img src="https://res.cloudinary.com/dgtjdhrnq/image/upload/v1705460127/logo1_adshdl.png"></v-img>
+          </v-toolbar-title>
+        </v-toolbar>
+        <v-divider></v-divider>
+        <v-list density="compact" nav>
+          <v-list-item prepend-icon="mdi-apps" title="Sản phẩm" value="Sản phẩm" to='product'></v-list-item>
+          <v-list-item prepend-icon="mdi-account-group" title="User" value="User" to='user'></v-list-item>
+        </v-list>
+      </v-navigation-drawer>
+            <v-main style="background-color: rgb(247, 247, 247);min-height: 100vh;">
+                <v-app-bar class="px-4" color="rgb(247, 247, 247)" :elevation="0" rounded="0">
+                    <h3 class="pa-1">Danh sách sản phẩm</h3>
+                    <v-spacer></v-spacer>
+                    <v-btn>
+                        <v-badge content="5" color="red">
+                            <v-icon>mdi-bell</v-icon>
+                        </v-badge>
+                    </v-btn>
+                    <v-avatar>
+                        <v-img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John"></v-img>
+                    </v-avatar>
+                </v-app-bar>
+                <v-container>
+                    <router-view></router-view>
+                </v-container>
+            </v-main>
+        </v-layout>
+    </v-app>
 </template>
 
 <script>
+import NavigrationDrawerVue from '@/components/NavigrationDrawer.vue'
 export default {
+    components: { NavigrationDrawerVue }
 
 }
 </script>
 
-<style scoped>
-* {
-    margin: 0;
-    padding: 0;
-    box-shadow: 0;
-}
-
-.body {
-    background-image: url('../assets/3.png');
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-h2{
-    margin-top: 90px;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-}
-.container >div{
-    width: 300px;
-    background-color: white;
-    height: auto;
-    margin: 10px;
-    color: black;
-    border-radius: 5px;
-    padding: 20px;
-}
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    margin-top: 30px;
-}
-.container >div p{
-    margin: 10px;
-}
-
-.container >div p:last-child{
-    opacity: 0.5;
-}
-</style>
+<style></style>

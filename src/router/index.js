@@ -15,7 +15,7 @@ const routes = [
   {
     path: '/index',
     name: 'index',
-    component: () => import('../views/IndexView.vue')
+    component: () => import('../views/BlogView.vue')
   },
   {
     path: '/login',
@@ -25,6 +25,7 @@ const routes = [
   {
     path: '/admin',
     name: 'admin',
+    component: () => import('../views/IndexView.vue'),
     children: [
       {
         path: 'product',
