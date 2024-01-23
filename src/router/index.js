@@ -13,17 +13,27 @@ const routes = [
     component: () => import('../views/AboutView.vue')
   },
   {
+    path: '/index',
+    name: 'index',
+    component: () => import('../views/IndexView.vue')
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/Login/LoginView.vue')
+  },
+  {
     path: '/admin',
     name: 'admin',
     children: [
       {
         path: 'product',
-        component: () => import('../views/Admin/IndexVue.vue'),
+        component: () => import('../views/Admin/ProductView.vue'),
         props: true 
       },
       {
         path: 'user',
-        component: () => import('../views/User/IndexVue.vue'),
+        component: () => import('../views/Admin/UserView.vue'),
         props: true 
       }
     ]

@@ -73,7 +73,7 @@
                       </td>
                       <td>
                         <v-img width="60" height="50"
-                          src="https://res.cloudinary.com/dgtjdhrnq/image/upload/v1705460127/logo1_adshdl.png"></v-img>
+                          src="https://tse2.mm.bing.net/th?id=OIP.HPtW3Kl-1qvIjhcfNg7eZwHaFX&pid=Api&P=0&h=220"></v-img>
                       </td>
                       <td class="text-center">
                         <v-btn variant="text"><v-icon>mdi-pencil</v-icon></v-btn>

@@ -61,7 +61,7 @@
     <v-col v-for="i in 15" :key="i" cols="12" sm="6" md="4" lg="3">
       <v-card hover variant="flat" width="259px" style="min-height: 300px;" class="mb-3">
         <v-img class="mx-auto mt-2" width="227px" height="224px"
-          src="https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/405270929_3734295376897775_6745873818454262834_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeHP6UELL0ROK8DBmNgiJAJI2w0-gyhy7ZPbDT6DKHLtk2DLybhHm7lrtQm7BkC9WU02DRkZE2TcJy8LtzQUdnHC&_nc_ohc=uNlCKpX4x-QAX81dtc2&_nc_ht=scontent.fhan17-1.fna&oh=00_AfDKSxlXgXiNeIRK_Wo9bJJiGaXfmIE4UefeT1S_RpXg8w&oe=65ABF79D"
+          src="https://tse2.mm.bing.net/th?id=OIP.HPtW3Kl-1qvIjhcfNg7eZwHaFX&pid=Api&P=0&h=220"
           alt="Product Image"></v-img>
         <v-card-text> Vintage Typewriter to post awesome stories about UI design and webdev. </v-card-text>
         <v-card-text style="font-size: 25px;font-weight: 700;padding: auto;padding-top: 0;">$49.50 </v-card-text>
