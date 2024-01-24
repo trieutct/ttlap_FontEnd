@@ -51,21 +51,23 @@ export default {
     margin: 0;
     padding: 0;
     box-shadow: 0;
-    font-family: Epilogue;
+    font-family: Epilogue,sans-serif;
 }
 
 .body {
     background-image: url('../assets/3.png');
     width: 100%;
+    background-size: cover;
+    background-position: center center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 h2{
-    margin-top: 90px;
+    margin-top: 60px;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
 }
 .container >div{
@@ -86,15 +88,19 @@ h2{
 }
 .container >div p:nth-child(2){
     margin: 10px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .container >div p:last-child,.container >div p:nth-child(3){
-    opacity: 0.5;
+    opacity: 0.7;
     margin-left: 10px;
 }
 .container >div img{
     width: 20px;
     margin-left: 10px;
+}
+.container >div p{
+    font-size: 16px;
+    line-height: 21px;
 }
 </style>
