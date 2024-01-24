@@ -35,17 +35,6 @@
         </v-card>
     </div>
 </template>
-<!-- <script>
-export default {
-    name: 'LoginView',
-    data() {
-        return {
-            visible: false,
-            terms:''
-        }
-    }
-}
-</script> -->
 <script setup>
 import { useForm, useField } from 'vee-validate';
 import * as yup from 'yup';
@@ -63,7 +52,7 @@ const { value: email, errorMessage: emailError } = useField(
 
 const { value: password, errorMessage: passwordError } = useField(
     'password',
-    yup.string().required("Không được bỏ trống email").min(6, "Chưa đủ 6 ký tự")
+    yup.string().required("Không được bỏ trống").min(6, "Chưa đủ 6 ký tự")
 );
 const login = handleSubmit(async () => {
     alert(email.value+ "   "+password.value)
@@ -72,6 +61,5 @@ const login = handleSubmit(async () => {
 
 
 </script>
-
-
-<style></style>
+<style>
+</style>

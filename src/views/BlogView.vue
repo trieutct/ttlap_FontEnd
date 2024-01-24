@@ -3,34 +3,38 @@
         <h2>Inside Open Art</h2>
         <div class="container">
             <div>
-                <!-- <p><i class="fa-brands fa-figma"></i></p> -->
+                <img src="../assets/Prison.png" alt="">
                 <p>4pt grid system</p>
                 <p>Base on 4pt gird system. Our UI KIT help you crate perfect white space</p>
             </div>
             <div>
-                <!-- <p><i class="fa-solid fa-pen"></i></p> -->
-                <p>4pt grid system</p>
-                <p>Base on 4pt gird system. Our UI KIT help you crate perfect white space</p>
+                <img src="../assets/icon2.png" alt="">
+                <p>Color style</p>
+                <p>All color in OpenArt are styled. You can change all
+design color with one click</p>
             </div>
             <div>
-                <!-- <p><i class="fa-brands fa-autoprefixer"></i></i></p> -->
-                <p>4pt grid system</p>
-                <p>Base on 4pt gird system. Our UI KIT help you crate perfect white space</p>
+                <img src="../assets/icon3.png" alt="">
+                <p>Free font</p>
+                <p>OpenArt use Epilogue font family</p>
+                <p>Available with open licence in gooogle font</p>
             </div>
             <div>
-                <!-- <p><i class="fa-solid fa-circle-dot"></i></i></p> -->
-                <p>4pt grid system</p>
-                <p>Base on 4pt gird system. Our UI KIT help you crate perfect white space</p>
+                <img src="../assets/icon4.png" alt="">
+                <p>Darkmode avaiable</p>
+                <p>Our UI Kit support darkmode</p>
+                <p>Chage your design to dark mode with one click</p>
             </div>
             <div>
-                <!-- <p><i class="fa-solid fa-envelope"></i></i></p> -->
-                <p>4pt grid system</p>
-                <p>Base on 4pt gird system. Our UI KIT help you crate perfect white space</p>
+                <img src="../assets/icon5.png" alt="">
+                <p>Easy to customize</p>
+                <p>Create any design with OpenArt UI kits </p>
             </div>
             <div>
-                <!-- <p><i class="fa-solid fa-star"></i></i></p> -->
-                <p>4pt grid system</p>
-                <p>Base on 4pt gird system. Our UI KIT help you crate perfect white space</p>
+                <img src="../assets/icon6.png" alt="">
+                <p>Variant components</p>
+                <p>All component art variant, easy to design, 
+easy to control</p>
             </div>
         </div>
     </div>
@@ -47,12 +51,13 @@ export default {
     margin: 0;
     padding: 0;
     box-shadow: 0;
+    font-family: Epilogue;
 }
 
 .body {
     background-image: url('../assets/3.png');
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,7 +69,7 @@ h2{
     text-align: center;
 }
 .container >div{
-    width: 300px;
+    width: 30%;
     background-color: white;
     height: auto;
     margin: 10px;
@@ -79,11 +84,17 @@ h2{
     justify-content: center;
     margin-top: 30px;
 }
-.container >div p{
+.container >div p:nth-child(2){
     margin: 10px;
+    font-weight: 400;
 }
 
-.container >div p:last-child{
+.container >div p:last-child,.container >div p:nth-child(3){
     opacity: 0.5;
+    margin-left: 10px;
+}
+.container >div img{
+    width: 20px;
+    margin-left: 10px;
 }
 </style>
