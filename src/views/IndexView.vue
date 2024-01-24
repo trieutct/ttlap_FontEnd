@@ -1,19 +1,27 @@
 <template>
     <v-app>
         <v-layout>
-            <v-navigation-drawer width="220" :expand-on-hover="drawer=true" v-model="drawer" :rail="rail" permanent>
-        <v-toolbar style="background-color: white;">
-          <v-toolbar-title class="ma-3">
-            <v-img src="https://res.cloudinary.com/dgtjdhrnq/image/upload/v1705460127/logo1_adshdl.png"></v-img>
-          </v-toolbar-title>
-        </v-toolbar>
-        <v-divider></v-divider>
-        <v-list density="compact" nav>
-            <v-list-item style="opacity: 0.6;font-size: 13px;">Quản lý sản phẩm</v-list-item>
-          <v-list-item prepend-icon="mdi-apps" title="Sản phẩm" value="Sản phẩm" to='product'></v-list-item>
-          <v-list-item prepend-icon="mdi-account-group" title="User" value="User" to='user'></v-list-item>
-        </v-list>
-      </v-navigation-drawer>
+            <v-navigation-drawer :expand-on-hover="drawer = true" v-model="drawer" :rail="rail" permanent>
+                <v-toolbar style="background-color: white;">
+                    <v-row>
+                        <v-col cols="8">
+                            <v-toolbar-title class="ma-3">
+                                <v-img width="250"
+                                    src="https://res.cloudinary.com/dgtjdhrnq/image/upload/v1705460127/logo1_adshdl.png"></v-img>
+                            </v-toolbar-title>
+                        </v-col>
+                        <v-col class="text-center" cols="4">
+                            <img style="margin-top: 18%;" src="../assets/indent.png" alt="">
+                        </v-col>
+                    </v-row>
+                </v-toolbar>
+                <v-divider></v-divider>
+                <v-list density="compact" nav>
+                    <v-list-item class="text-uppercase" style="opacity: 0.6;font-size: 13px;">Quản lý sản phẩm</v-list-item>
+                    <v-list-item prepend-icon="mdi-apps" title="Sản phẩm" value="Sản phẩm" to='product'></v-list-item>
+                    <v-list-item prepend-icon="mdi-account-group" title="User" value="User" to='user'></v-list-item>
+                </v-list>
+            </v-navigation-drawer>
             <v-main style="background-color: rgb(247, 247, 247);min-height: 100vh;">
                 <v-app-bar class="px-4" color="rgb(247, 247, 247)" :elevation="0" rounded="0">
                     <h3>Danh sách sản phẩm</h3>
@@ -37,7 +45,6 @@
 import NavigrationDrawerVue from '@/components/NavigrationDrawer.vue'
 export default {
     components: { NavigrationDrawerVue }
-
 }
 </script>
 

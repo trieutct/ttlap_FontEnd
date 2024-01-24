@@ -65,7 +65,7 @@
             </v-row>
           </v-col>
           <v-col cols="4" class="text-right">
-            <v-pagination variant="text" density="compact" :length="10"></v-pagination>
+            <v-pagination active-color="#0F60FF" variant="elevated" density="compact" :length="6"></v-pagination>
           </v-col>
         </v-row>
       </v-card>

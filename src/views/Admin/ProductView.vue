@@ -59,13 +59,13 @@
             <v-row>
               <p class="mt-5 opacity">Showing</p>
               <v-col cols="2">
-                <v-select density="compact" :items="['10', '20', '25', '30', 'All']" variant="outlined"></v-select>
+                <v-select v-model="seletedValue" density="compact" :items="['10', '20', '25', '30', 'All']" variant="outlined"></v-select>
               </v-col>
               <p class="mt-5 opacity">of 50</p>
             </v-row>
           </v-col>
           <v-col cols="4" class="text-right">
-            <v-pagination variant="text" density="compact" :length="10"></v-pagination>
+            <v-pagination active-color="#0F60FF" variant="elevated" density="compact" :length="6"></v-pagination>
           </v-col>
         </v-row>
       </v-card>
@@ -78,6 +78,7 @@
 import { ref } from 'vue';
 import DialogViewVue from '@/components/Admin/Product/DialogView.vue';
 const showDialog = ref(false);
+const seletedValue=ref(10)
 </script>
 
 <style scoped>
