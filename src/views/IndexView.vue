@@ -16,7 +16,7 @@
       </v-navigation-drawer>
             <v-main style="background-color: rgb(247, 247, 247);min-height: 100vh;">
                 <v-app-bar class="px-4" color="rgb(247, 247, 247)" :elevation="0" rounded="0">
-                    <h3 class="ml-1">Danh sách sản phẩm</h3>
+                    <h3>Danh sách sản phẩm</h3>
                     <v-spacer></v-spacer>
                     <v-btn>
                         <v-badge content="5" color="red">
@@ -27,9 +27,7 @@
                         <v-img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John"></v-img>
                     </v-avatar>
                 </v-app-bar>
-                <v-container>
                     <router-view></router-view>
-                </v-container>
             </v-main>
         </v-layout>
     </v-app>
