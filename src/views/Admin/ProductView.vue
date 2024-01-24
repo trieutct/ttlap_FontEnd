@@ -1,5 +1,6 @@
 <template>
-  <v-row>
+  <div style="margin: 1.5%;">
+    <v-row>
     <v-col cols="3">
       <v-text-field style="background-color: white;" density="compact" variant="outlined" label="Tìm kiếm"
         append-inner-icon="mdi mdi-magnify" single-line hide-details class="mr-2"></v-text-field>
@@ -70,6 +71,7 @@
       </v-card>
     </v-col>
   </v-row>
+  </div>
   <DialogViewVue v-model="showDialog" />
 </template>
 <script setup>

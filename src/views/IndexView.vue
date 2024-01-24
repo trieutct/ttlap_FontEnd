@@ -27,7 +27,7 @@
                         <v-img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John"></v-img>
                     </v-avatar>
                 </v-app-bar>
-                    <router-view></router-view>
+                <router-view></router-view>
             </v-main>
         </v-layout>
     </v-app>
