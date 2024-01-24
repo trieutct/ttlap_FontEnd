@@ -48,8 +48,8 @@
                   src="https://tse2.mm.bing.net/th?id=OIP.HPtW3Kl-1qvIjhcfNg7eZwHaFX&pid=Api&P=0&h=220"></v-img>
               </td>
               <td class="text-center">
-                <v-btn variant="text"><v-icon>mdi-pencil</v-icon></v-btn>
-                <v-btn variant="text"><v-icon>mdi-delete</v-icon></v-btn>
+                <v-btn  density="compact" variant="text"><v-icon>mdi-pencil</v-icon></v-btn>
+                <v-btn  density="compact" variant="text"><v-icon>mdi-delete</v-icon></v-btn>
               </td>
             </tr>
           </tbody>
@@ -65,7 +65,7 @@
             </v-row>
           </v-col>
           <v-col cols="4" class="text-right">
-            <v-pagination active-color="#0F60FF" variant="elevated" density="compact" :length="6"></v-pagination>
+            <v-pagination active-color="#0F60FF" variant="text" density="compact" :length="6"></v-pagination>
           </v-col>
         </v-row>
       </v-card>
@@ -91,4 +91,6 @@ const seletedValue=ref(10)
 .opacity {
   opacity: 0.6;
 }
+
+
 </style>

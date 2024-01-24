@@ -1,7 +1,7 @@
 <template>
     <v-app>
         <v-layout>
-            <v-navigation-drawer  permanent>
+            <v-navigation-drawer class="navigation_drawer" permanent>
                 <v-toolbar style="background-color: white;">
                     <v-row>
                         <v-col cols="8">
@@ -24,7 +24,7 @@
             </v-navigation-drawer>
             <v-main style="background-color: rgb(247, 247, 247);min-height: 100vh;">
                 <v-app-bar class="px-4" color="rgb(247, 247, 247)" :elevation="0" rounded="0">
-                    <h3>Danh sách sản phẩm</h3>
+                    <h3 class="reposive">Danh sách sản phẩm</h3>
                     <v-spacer></v-spacer>
                     <v-btn>
                         <v-badge content="5" color="red">
@@ -55,4 +55,10 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+@media (min-width: 1200px) {
+  .reposive{
+    margin-left: 2%;
+  }
+}
+</style>

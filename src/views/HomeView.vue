@@ -57,9 +57,10 @@
       </v-chip>
     </v-col>
   </v-row>
-  <v-row class="mr-3 ml-3 mt-3">
+  <v-card class="custom-shadow">
+    <v-row class="mr-3 ml-3 mt-3">
     <v-col v-for="i in 15" :key="i" cols="12" sm="6" md="4" lg="3">
-      <v-card hover variant="flat" width="259px" style="min-height: 300px;" class="mb-3">
+      <v-card hover variant="flat" width="259px" style="min-height: 472px;" class="mb-3">
         <v-img class="mx-auto mt-2" width="227px" height="224px"
           src="https://tse2.mm.bing.net/th?id=OIP.HPtW3Kl-1qvIjhcfNg7eZwHaFX&pid=Api&P=0&h=220"
           alt="Product Image"></v-img>
@@ -84,9 +85,7 @@
       </v-card>
     </v-col>
   </v-row>
-
-
-
+  </v-card>
   <v-row class="ma-1">
     <v-col cols="4">
       <v-card class="pa-5 d-flex flex-column justify-center align-center rounded-1"
@@ -125,3 +124,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.custom-shadow {
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.2);
+}
+</style>
