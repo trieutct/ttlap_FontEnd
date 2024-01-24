@@ -35,8 +35,8 @@
             </v-container>
             <v-card-actions class="pr-4">
                 <v-spacer></v-spacer>
-            <v-btn text="Hủy"></v-btn>
-            <v-btn color="primary" variant="elevated" text="Thêm"></v-btn>
+            <v-btn class="text-capitalize" text="Hủy"></v-btn>
+            <v-btn color="primary" class="text-capitalize" variant="elevated">Tạo<span class="text-lowercase">mới</span></v-btn>
         </v-card-actions>
     </v-card>
 </v-dialog></template>

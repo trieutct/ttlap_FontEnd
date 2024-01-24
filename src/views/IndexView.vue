@@ -1,7 +1,7 @@
 <template>
     <v-app>
         <v-layout>
-            <v-navigation-drawer :expand-on-hover="drawer = true" v-model="drawer" :rail="rail" permanent>
+            <v-navigation-drawer  permanent>
                 <v-toolbar style="background-color: white;">
                     <v-row>
                         <v-col cols="8">
@@ -44,7 +44,14 @@
 <script>
 import NavigrationDrawerVue from '@/components/NavigrationDrawer.vue'
 export default {
-    components: { NavigrationDrawerVue }
+    components: { NavigrationDrawerVue },
+    data()
+    {
+        return{
+            // drawer: true,
+            // rail: true,
+        }
+    }
 }
 </script>
 
