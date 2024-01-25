@@ -1,38 +1,39 @@
 <template>
     <v-dialog max-width="500px">
-        <v-card>
-            <v-card-title style="font-weight: bold;">
-                <h4>Tạo mới</h4>
-            </v-card-title>
-            <v-container style="background-color: rgb(247, 247, 247);">
-                <v-form @submit.prevent="login">
+        <v-form @submit.prevent="login">
+            <v-card>
+                <v-card-title style="font-weight: bold;">
+                    <h4>Tạo mới</h4>
+                </v-card-title>
+                <v-container style="background-color: rgb(247, 247, 247);">
                     <v-row>
                         <v-col cols="12" style="font-size: 13px;">
-                            <span>Tên sản phẩm  </span> <span class="text-blue ml-2">*</span>
-                            <v-text-field v-model="name" placeholder="Nhập tên sản phẩm" :error-messages="nameError" style="background-color: white;"
-                                density="compact" single-line hide-details variant="outlined"></v-text-field>
-                                <span style="color:red">{{ nameError }}</span>
+                            <span>Tên sản phẩm </span> <span class="text-blue ml-2">*</span>
+                            <v-text-field v-model="name" placeholder="Nhập tên sản phẩm" :error-messages="nameError"
+                                style="background-color: white;" density="compact" single-line hide-details
+                                variant="outlined"></v-text-field>
+                            <span style="color:red">{{ nameError }}</span>
                         </v-col>
                         <v-col cols="12" style="font-size: 13px;">
                             <span>Giá</span><span class="text-blue ml-2">*</span>
-                            <v-text-field v-model="price" placeholder="Nhập giá sản phẩm" :error-messages="priceError" required
-                                style="background-color: white;" density="compact" single-line hide-details
+                            <v-text-field v-model="price" placeholder="Nhập giá sản phẩm" :error-messages="priceError"
+                                required style="background-color: white;" density="compact" single-line hide-details
                                 variant="outlined"></v-text-field>
-                                <span style="color:red">{{ priceError }}</span>
+                            <span style="color:red">{{ priceError }}</span>
                         </v-col>
                         <v-col cols="12" style="font-size: 13px;">
                             <span>Số lượng</span><span class="text-blue ml-2">*</span>
-                            <v-text-field v-model="quantity" placeholder="Nhập số lượng sản phẩm" :error-messages="quantityError" required
-                                style="background-color: white;" density="compact" single-line hide-details
-                                variant="outlined"></v-text-field>
-                                <span style="color:red">{{ quantityError }}</span>
+                            <v-text-field v-model="quantity" placeholder="Nhập số lượng sản phẩm"
+                                :error-messages="quantityError" required style="background-color: white;" density="compact"
+                                single-line hide-details variant="outlined"></v-text-field>
+                            <span style="color:red">{{ quantityError }}</span>
                         </v-col>
                         <v-col cols="12" style="font-size: 13px;">
                             <span>Mô tả</span><span class="text-blue ml-2">*</span>
-                            <v-textarea v-model="description" placeholder="Nhập mô tả" :error-messages="descriptionError" required
-                                style="background-color: white;" density="compact" single-line hide-details
+                            <v-textarea v-model="description" placeholder="Nhập mô tả" :error-messages="descriptionError"
+                                required style="background-color: white;" density="compact" single-line hide-details
                                 variant="outlined"></v-textarea>
-                                <span style="color:red">{{ descriptionError }}</span>
+                            <span style="color:red">{{ descriptionError }}</span>
                         </v-col>
                         <v-col cols="12" style="font-size: 13px;">
                             <span>Ảnh sản phẩm</span><span class="text-blue ml-2">*</span>
@@ -40,14 +41,15 @@
                                 single-line hide-details variant="outlined"></v-text-field>
                         </v-col>
                     </v-row>
-                </v-form>
-            </v-container>
-            <v-card-actions class="pr-4">
-                <v-spacer></v-spacer>
-                <v-btn class="text-capitalize" text="Hủy"></v-btn>
-                <v-btn color="primary" class="text-capitalize" variant="elevated">Tạo<span class="text-lowercase">mới</span></v-btn>
-            </v-card-actions>
-        </v-card>
+                </v-container>
+                <v-card-actions class="pr-4">
+                    <v-spacer></v-spacer>
+                    <v-btn @click="close" class="text-capitalize" text="Hủy"></v-btn>
+                    <v-btn type="submit" color="primary" class="text-capitalize" variant="elevated">Tạo<span
+                            class="text-lowercase">mới</span></v-btn>
+                </v-card-actions>
+            </v-card>
+        </v-form>
     </v-dialog>
 </template>
 
@@ -57,7 +59,7 @@ import * as yup from 'yup';
 import { ref } from 'vue';
 
 
-const { handleSubmit } = useForm();
+const { handleSubmit,resetForm } = useForm();
 
 const { value: name, errorMessage: nameError } = useField(
     'name',
@@ -97,6 +99,8 @@ const { value: description, errorMessage: descriptionError } = useField(
 const login = handleSubmit(async () => {
     alert(name.value + "   " + price.value)
 });
-
+const close=()=>{
+    resetForm()
+}
 </script>
 <style></style>

@@ -49,19 +49,9 @@ export default {
     {
         return{
             drawer: true,
-            rail: true,
+            rail: false,
         }
     }
-//     watch:{
-//         drawer()
-//         {
-//             alert(this.drawer)
-//         },
-//         rail()
-//         {
-//             alert(this.rail)
-//         }
-//     }
 }
 </script>
 
