@@ -48,8 +48,8 @@
                   src="https://tse2.mm.bing.net/th?id=OIP.HPtW3Kl-1qvIjhcfNg7eZwHaFX&pid=Api&P=0&h=220"></v-img>
               </td>
               <td class="text-center">
-                <v-btn  density="compact" variant="text"><v-icon>mdi-pencil</v-icon></v-btn>
-                <v-btn  density="compact" variant="text"><v-icon>mdi-delete</v-icon></v-btn>
+                <v-btn icon="mdi-pencil"  density="compact" variant="text"></v-btn>
+                <v-btn icon="mdi-delete"  density="compact" variant="text"></v-btn>
               </td>
             </tr>
           </tbody>

@@ -5,15 +5,14 @@
         :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']" variant="outlined"></v-select>
     </v-col>
     <v-col cols="2">
-      <v-select density="compact"
-        :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']" variant="outlined"></v-select>
+      <v-select density="compact" :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"
+        variant="outlined"></v-select>
     </v-col>
     <v-col cols="2">
-      <v-select density="compact" 
-        :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']" variant="outlined"></v-select>
+      <v-select density="compact" :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"
+        variant="outlined"></v-select>
     </v-col>
-    <v-col cols="1"></v-col>
-    <v-col cols="3">
+    <v-col cols="6" class="text-right">
       <v-btn style="background-color: #adc4fe;color:#4d4d50" class="rounded-1 text-capitalize" variant="tonal">
         Show all
       </v-btn>
@@ -24,15 +23,21 @@
       <v-btn style="background-color: #adc4fe;color:#4d4d50" class="rounded-1 text-capitalize" variant="tonal">
         Buy now
       </v-btn>
-    </v-col>
-    <v-col class="text-right" cols="2">
-      <v-btn ariant="tonal">
+      <v-btn class="ml-5" ariant="tonal">
         <v-icon>mdi mdi-menu</v-icon>
       </v-btn>
       <v-btn style="background-color: #adc4fe" variant="elevated">
         <v-icon style="color: #0c5bda;">mdi mdi-microsoft-windows</v-icon>
       </v-btn>
     </v-col>
+    <!-- <v-col class="text-right" cols="2">
+      <v-btn ariant="tonal">
+        <v-icon>mdi mdi-menu</v-icon>
+      </v-btn>
+      <v-btn style="background-color: #adc4fe" variant="elevated">
+        <v-icon style="color: #0c5bda;">mdi mdi-microsoft-windows</v-icon>
+      </v-btn>
+    </v-col> -->
   </v-row>
   <v-row class="mr-3 ml-3 mt-3">
     <v-col cols="12">
@@ -58,33 +63,34 @@
     </v-col>
   </v-row>
   <v-card class="custom-shadow">
-    <v-row class="mr-3 ml-3 mt-3">
-    <v-col v-for="i in 15" :key="i" cols="12" sm="6" md="4" lg="3">
-      <v-card hover variant="flat" width="259px" style="min-height: 472px;" class="mb-3">
-        <v-img class="mx-auto mt-2" width="227px" height="224px"
-          src="https://tse2.mm.bing.net/th?id=OIP.HPtW3Kl-1qvIjhcfNg7eZwHaFX&pid=Api&P=0&h=220"
-          alt="Product Image"></v-img>
-        <v-card-text> Vintage Typewriter to post awesome stories about UI design and webdev. </v-card-text>
-        <v-card-text style="font-size: 25px;font-weight: 700;padding: auto;padding-top: 0;">$49.50 </v-card-text>
-        <v-card-Subtitle style="padding-top: 0;">Eligible for Shipping To Mars or somewhere else</v-card-Subtitle>
-        <v-row style="margin-bottom: 5px;">
-          <v-col class="ml-3" cols="5">
-            <v-icon color="yellow" size="x-small">mdi mdi-star</v-icon>
-            <v-icon color="yellow" size="x-small">mdi mdi-star</v-icon>
-            <v-icon color="yellow" size="x-small">mdi mdi-star</v-icon>
-            <v-icon color="yellow" size="x-small">mdi mdi-star</v-icon>
-            <v-icon color="yellow" size="x-small">mdi mdi-star-half</v-icon>
-          </v-col>
-          <v-col class="text-right" cols="6">
-            <v-btn class="text-capitalize" color="primary" size="small" prepend-icon="mdi-heart-outline"
-              variant="outlined">
-              Watch
-            </v-btn>
-          </v-col>
-        </v-row>
-      </v-card>
-    </v-col>
-  </v-row>
+    <v-row class="mr-3 ml-3 mt-1">
+      <v-col v-for="i in 15" :key="i" cols="12" sm="6" md="4" lg="3">
+        <v-card hover variant="flat" width="259px" style="min-height: 472px;" class="mb-3 my-card">
+          <v-img class="mx-auto mt-2" width="227px" height="224px"
+            src="https://tse2.mm.bing.net/th?id=OIP.HPtW3Kl-1qvIjhcfNg7eZwHaFX&pid=Api&P=0&h=220"
+            alt="Product Image"></v-img>
+          <v-card-text class="my-card-text" style="font-size: 16px;line-height: 24px; height: 85px;"> Vintage Typewrite  Vintage Typewrite  Vintage Typewrite Vintage Typewriter to post awesome stories about UI design and webdev. </v-card-text>
+          <v-card-text class="mt-5" style="font-size: 24px;font-weight: 700;padding: auto;height: 36px;">$49.50 </v-card-text>
+          <p class="mt-2 ml-4" style="height: 41px;font-size: 14px;opacity: 0.6;">Eligible for Shipping To Mars or somewhere else</p>
+          <v-row style="margin-top: 5px;">
+            <v-col class="ml-3 mt-1" cols="5" style="display: flex;">
+              <v-icon color="yellow" size="x-small">mdi mdi-star</v-icon>
+              <v-icon color="yellow" size="x-small">mdi mdi-star</v-icon>
+              <v-icon color="yellow" size="x-small">mdi mdi-star</v-icon>
+              <v-icon color="yellow" size="x-small">mdi mdi-star</v-icon>
+              <v-icon color="yellow" size="x-small">mdi mdi-star-half</v-icon>
+              <span style="font-size: 12px;">4.05</span>
+            </v-col>
+            <v-col class="text-right" cols="6">
+              <v-btn class="text-capitalize" color="primary" size="small" prepend-icon="mdi-heart-outline"
+                variant="outlined">
+                Watch
+              </v-btn>
+            </v-col>
+          </v-row>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-card>
   <v-row class="ma-1">
     <v-col cols="4">
@@ -127,6 +133,15 @@ export default {
 
 <style>
 .custom-shadow {
-  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
+}
+.my-card {
+  max-height: 200px; /* Đặt chiều cao tối đa của thẻ */
+  overflow: hidden;  /* Ẩn phần nội dung vượt quá chiều cao */
+}
+
+.my-card-text {
+  overflow-y:hidden;
 }
 </style>
