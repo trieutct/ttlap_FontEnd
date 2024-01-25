@@ -13,20 +13,20 @@
         variant="outlined"></v-select>
     </v-col>
     <v-col cols="6" class="text-right">
-      <v-btn style="background-color: #adc4fe;color:#4d4d50" class="rounded-1 text-capitalize" variant="tonal">
+      <v-btn style="background-color: #bbccf6;color:#4d4d50" class="rounded-1 text-capitalize" variant="tonal">
         Show all
       </v-btn>
       <v-btn style="font-weight: bold;color: #2264D1;" bg-color="white" class="rounded-1 text-capitalize"
         variant="elevated">
         Action
       </v-btn>
-      <v-btn style="background-color: #adc4fe;color:#4d4d50" class="rounded-1 text-capitalize" variant="tonal">
+      <v-btn style="background-color: #bbccf6;color:#4d4d50" class="rounded-1 text-capitalize" variant="tonal">
         Buy now
       </v-btn>
-      <v-btn class="ml-5" ariant="tonal">
+      <v-btn  style="background-color: #adc4fe" class="ml-5" ariant="tonal">
         <v-icon>mdi mdi-menu</v-icon>
       </v-btn>
-      <v-btn style="background-color: #adc4fe" variant="elevated">
+      <v-btn  variant="elevated">
         <v-icon style="color: #0c5bda;">mdi mdi-microsoft-windows</v-icon>
       </v-btn>
     </v-col>
