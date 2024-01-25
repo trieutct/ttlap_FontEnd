@@ -1,14 +1,14 @@
 <template>
   <v-row class="ml-3 mt-3">
-    <v-col cols="12" sm="6" md="6" lg="2">
+    <v-col cols="4" sm="6" md="6" lg="2">
       <v-select v-model="SelectedCategory" density="compact" label="Chọn sản phẩm"
         :items="['All','Quần','Áo']" variant="outlined"></v-select>
     </v-col>
-    <v-col cols="12" sm="6" md="6" lg="2">
+    <v-col cols="4" sm="6" md="6" lg="2">
       <v-select v-model="selectedSort" label="Giá" density="compact" :items="['Từ cao -> thấp','Từ thấp -> cao']"
         variant="outlined"></v-select>
     </v-col>
-    <v-col cols="12" sm="6" md="6" lg="2">
+    <v-col cols="4" sm="6" md="6" lg="2">
       <v-select density="compact" :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"
         variant="outlined"></v-select>
     </v-col>
