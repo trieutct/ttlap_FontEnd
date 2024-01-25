@@ -1,5 +1,5 @@
 <template>
-  <v-row class="mr-3 ml-3 mt-3">
+  <v-row class="ml-3 mt-3">
     <v-col cols="2">
       <v-select density="compact" label="Sort by"
         :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']" variant="outlined"></v-select>
@@ -64,7 +64,7 @@
   </v-row>
   <v-card class="custom-shadow">
     <v-row class="mr-3 ml-3 mt-1">
-      <v-col v-for="i in 15" :key="i" cols="12" sm="6" md="4" lg="3">
+      <v-col class="d-flex flex-column justify-center align-center" v-for="i in 15" :key="i" cols="3">
         <v-card hover variant="flat" width="259px" style="min-height: 472px;" class="mb-3 my-card">
           <v-img class="mx-auto mt-2" width="227px" height="224px"
             src="https://tse2.mm.bing.net/th?id=OIP.HPtW3Kl-1qvIjhcfNg7eZwHaFX&pid=Api&P=0&h=220"
