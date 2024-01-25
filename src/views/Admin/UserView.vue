@@ -15,37 +15,39 @@
         <v-table density="compact">
           <thead>
             <tr>
-              <th class="text-left">
-                Tên sản phẩm
+              <th class="text-left text-uppercase text-medium-emphasis">
+                Avatar
               </th>
-              <th class="text-left">
-                Giá
+              <th class="text-left text-uppercase text-medium-emphasis">
+                Tên người dùng
               </th>
-              <th class="text-left">
-                Số lượng
+              <th class="text-left text-uppercase text-medium-emphasis">
+                Email
               </th>
-              <th class="text-left">
-                Mô tả
+              <th class="text-left text-uppercase text-medium-emphasis">
+                Ngày sinh
               </th>
-              <th class="text-left">
-                Ảnh
+              <th class="text-left text-uppercase text-medium-emphasis">
+                Số điện thoại
               </th>
-              <th class="text-center">
+              <th class="text-center text-uppercase text-medium-emphasis">
                 Acction
               </th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="i in 10" :key="i">
-              <td>Sản phẩm {{ i }}</td>
-              <td>$6,000</td>
-              <td>1</td>
-              <td style="width: 250px;" class="v-text-truncate">
-                Lorem ipsum dolor sit amet
+              <td>
+                <v-img class="ma-1" style="border-radius: 2px;"  width="36" height="36"
+                  src="https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-1/405270929_3734295376897775_6745873818454262834_n.jpg?stp=dst-jpg_p240x240&_nc_cat=111&ccb=1-7&_nc_sid=5740b7&_nc_ohc=Fx16hJQ0c-YAX8npNMO&_nc_ht=scontent.fhan5-11.fna&oh=00_AfDA9BplOnOtkPOHh8ZsOK6TD3weclF8709krzGu7QAf4Q&oe=65B6015F"></v-img>
+              </td>
+              <td>Trịnh Công Triệu</td>
+              <td>trieu@gmail.com</td>
+              <td class="v-text-truncate">
+                29/07/2002
               </td>
               <td>
-                <v-img width="60" height="50"
-                  src="https://res.cloudinary.com/dgtjdhrnq/image/upload/v1705460127/logo1_adshdl.png"></v-img>
+                0941590356
               </td>
               <td class="text-center">
                 <v-btn variant="text"><v-icon>mdi-pencil</v-icon></v-btn>
@@ -59,7 +61,7 @@
             <v-row>
               <p class="mt-5 opacity">Showing</p>
               <v-col cols="2">
-                <v-select density="compact" :items="['10', '20', '25', '30', 'All']" variant="outlined"></v-select>
+                <v-select v-model="seletedValue" density="compact" :items="['10', '20', '25', '30', 'All']" variant="outlined"></v-select>
               </v-col>
               <p class="mt-5 opacity">of 50</p>
             </v-row>
@@ -78,6 +80,8 @@
 import { ref } from 'vue';
 import DialogViewVue from '@/components/Admin/User/DialogView.vue';
 const showDialog = ref(false);
+const seletedValue=ref(10)
+
 </script>
   
 <style scoped>

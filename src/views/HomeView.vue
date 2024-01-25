@@ -93,7 +93,7 @@
     </v-row>
   </v-card>
   <v-row class="ma-1">
-    <v-col cols="12" sm="4">
+    <v-col cols="12" sm="12" md="12" lg="4">
       <v-card class="pa-5 d-flex flex-column justify-center align-center rounded-1"
         style="min-height: 156px; background-color: #EDEDF0;">
         <img width="80" height="80" src="../assets/footer1.png">
@@ -101,7 +101,7 @@
         <v-card-subtitle class="text-center">Let’s boost your marketplace</v-card-subtitle>
       </v-card>
     </v-col>
-    <v-col cols="12" sm="4">
+    <v-col cols="12" sm="12" md="12" lg="4">
       <v-card class="pa-5 d-flex flex-column justify-center align-center rounded-1"
         style="min-height: 156px; background-color: #EDEDF0;">
         <img width="80" height="80" src="../assets/footer2.png">
@@ -109,7 +109,7 @@
         <v-card-subtitle class="text-center">Speed up with Setproduct templates</v-card-subtitle>
       </v-card>
     </v-col>
-    <v-col cols="12" sm="4">
+    <v-col cols="12" sm="12" md="12" lg="4">
       <v-card class="pa-5 d-flex flex-column justify-center align-center rounded-1"
         style="min-height: 156px; background-color: #EDEDF0;">
         <img width="80" height="80" src="../assets/footer3.png">

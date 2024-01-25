@@ -8,34 +8,34 @@
                 <v-form @submit.prevent="login">
                     <v-row>
                         <v-col cols="12" style="font-size: 13px;">
-                            <span>Tên sản phẩm  </span> 
-                            <v-text-field v-model="name" :error-messages="nameError" style="background-color: white;"
+                            <span>Tên sản phẩm  </span> <span class="text-blue ml-2">*</span>
+                            <v-text-field v-model="name" placeholder="Nhập tên sản phẩm" :error-messages="nameError" style="background-color: white;"
                                 density="compact" single-line hide-details variant="outlined"></v-text-field>
                                 <span style="color:red">{{ nameError }}</span>
                         </v-col>
                         <v-col cols="12" style="font-size: 13px;">
-                            <p>Giá</p>
-                            <v-text-field v-model="price" :error-messages="priceError" required
+                            <span>Giá</span><span class="text-blue ml-2">*</span>
+                            <v-text-field v-model="price" placeholder="Nhập giá sản phẩm" :error-messages="priceError" required
                                 style="background-color: white;" density="compact" single-line hide-details
                                 variant="outlined"></v-text-field>
                                 <span style="color:red">{{ priceError }}</span>
                         </v-col>
                         <v-col cols="12" style="font-size: 13px;">
-                            <p>Số lượng</p>
-                            <v-text-field v-model="quantity" :error-messages="quantityError" required
+                            <span>Số lượng</span><span class="text-blue ml-2">*</span>
+                            <v-text-field v-model="quantity" placeholder="Nhập số lượng sản phẩm" :error-messages="quantityError" required
                                 style="background-color: white;" density="compact" single-line hide-details
                                 variant="outlined"></v-text-field>
                                 <span style="color:red">{{ quantityError }}</span>
                         </v-col>
                         <v-col cols="12" style="font-size: 13px;">
-                            <p>Mô tả</p>
-                            <v-textarea v-model="description" :error-messages="descriptionError" required
+                            <span>Mô tả</span><span class="text-blue ml-2">*</span>
+                            <v-textarea v-model="description" placeholder="Nhập mô tả" :error-messages="descriptionError" required
                                 style="background-color: white;" density="compact" single-line hide-details
                                 variant="outlined"></v-textarea>
                                 <span style="color:red">{{ descriptionError }}</span>
                         </v-col>
                         <v-col cols="12" style="font-size: 13px;">
-                            <p>Ảnh sản phẩm</p>
+                            <span>Ảnh sản phẩm</span><span class="text-blue ml-2">*</span>
                             <v-text-field placeholder="Nhập link ảnh" style="background-color: white;" density="compact"
                                 single-line hide-details variant="outlined"></v-text-field>
                         </v-col>

@@ -15,22 +15,22 @@
         <v-table density="compact">
           <thead>
             <tr>
-              <th class="text-left">
+              <th class="text-left text-uppercase text-medium-emphasis">
                 Tên sản phẩm
               </th>
-              <th class="text-left">
+              <th class="text-left text-uppercase text-medium-emphasis">
                 Giá
               </th>
-              <th class="text-left">
+              <th class="text-left text-uppercase text-medium-emphasis">
                 Số lượng
               </th>
-              <th class="text-left">
+              <th class="text-left text-uppercase text-medium-emphasis">
                 Mô tả
               </th>
-              <th class="text-left">
+              <th class="text-left text-uppercase text-medium-emphasis">
                 Ảnh
               </th>
-              <th class="text-center">
+              <th class="text-center text-uppercase text-medium-emphasis">
                 Acction
               </th>
             </tr>
@@ -44,7 +44,7 @@
                 Lorem ipsum dolor sit amet
               </td>
               <td>
-                <v-img width="60" height="50"
+                <v-img width="36" height="36"
                   src="https://tse2.mm.bing.net/th?id=OIP.HPtW3Kl-1qvIjhcfNg7eZwHaFX&pid=Api&P=0&h=220"></v-img>
               </td>
               <td class="text-center">
