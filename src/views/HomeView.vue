@@ -1,11 +1,11 @@
 <template>
   <v-row class="ml-3 mt-3">
     <v-col cols="12" sm="6" md="6" lg="2">
-      <v-select density="compact" label="Sort by"
-        :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']" variant="outlined"></v-select>
+      <v-select v-model="SelectedCategory" density="compact" label="Chọn sản phẩm"
+        :items="['All','Quần','Áo']" variant="outlined"></v-select>
     </v-col>
     <v-col cols="12" sm="6" md="6" lg="2">
-      <v-select density="compact" :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"
+      <v-select v-model="selectedSort" label="Giá" density="compact" :items="['Từ cao -> thấp','Từ thấp -> cao']"
         variant="outlined"></v-select>
     </v-col>
     <v-col cols="12" sm="6" md="6" lg="2">
@@ -27,7 +27,7 @@
         <v-icon>mdi mdi-menu</v-icon>
       </v-btn>
       <v-btn class="mr-5"  variant="elevated">
-        <v-icon style="color: #0c5bda;">mdi mdi-microsoft-windows</v-icon>
+        <v-icon style="color: #0c5bda;">mdi mdi-microsoft</v-icon>
       </v-btn>
     </v-col>
   </v-row>
@@ -56,7 +56,7 @@
   </v-row>
   <v-card class="custom-shadow">
     <v-row class="mr-3 ml-3 mt-1">
-      <v-col class="d-flex flex-column justify-center align-center" v-for="item in products" :key="item" cols="12" sm="6" md="4" lg="3">
+      <v-col class="d-flex flex-column justify-center align-center" v-for="item in filteredProducts" :key="item" cols="12" sm="6" md="4" lg="3">
         <v-card hover variant="flat" width="259px" style="min-height: 472px;" class="mb-3 my-card">
           <v-img class="mx-auto mt-2" width="227px" height="224px"
             :src="item.image"
@@ -119,7 +119,8 @@
 </template>
 
 <script setup>
-import {ref,reactive} from "vue"
+import {ref,reactive, computed} from "vue"
+
 const products=reactive([
   {
     name:"Áo Polo Nam Cafe Phối Nẹp Thấm Hút Mồ Hôi",image:"https://bizweb.dktcdn.net/thumb/large/100/438/408/products/ao-polo-nam-yody-apm3635-gre.jpg?v=1702633518457",description:"Eligible for Shipping To Mars or somewhere else",price:"12.8",sale:"10",feedback:"4.8"
@@ -182,6 +183,22 @@ const products=reactive([
     name:"Quần Kaki Nam Basic Năng Động",image:"https://bizweb.dktcdn.net/thumb/large/100/438/408/products/qkm5027-bee-26.jpg?v=1704250429600",description:"Eligible for Shipping To Mars or somewhere else",price:"48.5",sale:0,feedback:4.8
   },
 ])
+const SelectedCategory=ref('All')
+const selectedSort=ref(null)
+const filteredProducts = computed(() => {
+  let filtered = [];
+
+  if (SelectedCategory.value === 'All') {
+    filtered = [...products];
+  } else {
+    filtered = products.filter(product => product.name.includes(SelectedCategory.value));
+  }
+  if (selectedSort.value === "Từ cao -> thấp") {
+    return filtered.sort((a, b) => b.price - a.price);
+  } else {
+    return filtered.sort((a, b) => a.price - b.price);
+  }
+});
 </script>
 
 <style>
