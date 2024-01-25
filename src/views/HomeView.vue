@@ -1,18 +1,18 @@
 <template>
   <v-row class="ml-3 mt-3">
-    <v-col cols="2">
+    <v-col cols="12" sm="2" md="6" lg="2">
       <v-select density="compact" label="Sort by"
         :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']" variant="outlined"></v-select>
     </v-col>
-    <v-col cols="2">
+    <v-col cols="12" sm="2" md="6" lg="2">
       <v-select density="compact" :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"
         variant="outlined"></v-select>
     </v-col>
-    <v-col cols="2">
+    <v-col cols="12" sm="2" md="6" lg="2">
       <v-select density="compact" :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"
         variant="outlined"></v-select>
     </v-col>
-    <v-col cols="6" class="text-right">
+    <v-col cols="12" sm="6" md="6" lg="6" class="text-right">
       <v-btn style="background-color: #bbccf6;color:#4d4d50" class="rounded-1 text-capitalize" variant="tonal">
         Show all
       </v-btn>
@@ -42,29 +42,29 @@
   <v-row class="mr-3 ml-3 mt-3">
     <v-col cols="12">
       <v-chip variant="text">Related</v-chip>
-      <v-chip class="mr-2">
+      <v-chip class="mr-2 mt-2">
         worldwide shipping
       </v-chip>
-      <v-chip class="mr-2">
+      <v-chip class="mr-2 mt-2">
         under $50
       </v-chip>
-      <v-chip class="mr-2">
+      <v-chip class="mr-2 mt-2">
         kitten
       </v-chip>
-      <v-chip class="mr-2">
+      <v-chip class="mr-2 mt-2">
         plastic plugs
       </v-chip>
-      <v-chip class="mr-2">
+      <v-chip class="mr-2 mt-2">
         pucker shoes
       </v-chip>
-      <v-chip class="mr-2">
+      <v-chip class="mr-2 mt-2">
         vintage typewriter
       </v-chip>
     </v-col>
   </v-row>
   <v-card class="custom-shadow">
     <v-row class="mr-3 ml-3 mt-1">
-      <v-col class="d-flex flex-column justify-center align-center" v-for="i in 15" :key="i" cols="3">
+      <v-col class="d-flex flex-column justify-center align-center" v-for="i in 15" :key="i" cols="12" sm="6" md="4" lg="3">
         <v-card hover variant="flat" width="259px" style="min-height: 472px;" class="mb-3 my-card">
           <v-img class="mx-auto mt-2" width="227px" height="224px"
             src="https://tse2.mm.bing.net/th?id=OIP.HPtW3Kl-1qvIjhcfNg7eZwHaFX&pid=Api&P=0&h=220"
@@ -93,7 +93,7 @@
     </v-row>
   </v-card>
   <v-row class="ma-1">
-    <v-col cols="4">
+    <v-col cols="12" sm="4">
       <v-card class="pa-5 d-flex flex-column justify-center align-center rounded-1"
         style="min-height: 156px; background-color: #EDEDF0;">
         <img width="80" height="80" src="../assets/footer1.png">
@@ -101,7 +101,7 @@
         <v-card-subtitle class="text-center">Let’s boost your marketplace</v-card-subtitle>
       </v-card>
     </v-col>
-    <v-col cols="4">
+    <v-col cols="12" sm="4">
       <v-card class="pa-5 d-flex flex-column justify-center align-center rounded-1"
         style="min-height: 156px; background-color: #EDEDF0;">
         <img width="80" height="80" src="../assets/footer2.png">
@@ -109,7 +109,7 @@
         <v-card-subtitle class="text-center">Speed up with Setproduct templates</v-card-subtitle>
       </v-card>
     </v-col>
-    <v-col cols="4">
+    <v-col cols="12" sm="4">
       <v-card class="pa-5 d-flex flex-column justify-center align-center rounded-1"
         style="min-height: 156px; background-color: #EDEDF0;">
         <img width="80" height="80" src="../assets/footer3.png">
