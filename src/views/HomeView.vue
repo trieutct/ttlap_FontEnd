@@ -1,18 +1,18 @@
 <template>
   <v-row class="ml-3 mt-3">
-    <v-col cols="12" sm="2" md="6" lg="2">
+    <v-col cols="12" sm="12" md="6" lg="2">
       <v-select density="compact" label="Sort by"
         :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']" variant="outlined"></v-select>
     </v-col>
-    <v-col cols="12" sm="2" md="6" lg="2">
+    <v-col cols="12" sm="12" md="6" lg="2">
       <v-select density="compact" :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"
         variant="outlined"></v-select>
     </v-col>
-    <v-col cols="12" sm="2" md="6" lg="2">
+    <v-col cols="12" sm="12" md="6" lg="2">
       <v-select density="compact" :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"
         variant="outlined"></v-select>
     </v-col>
-    <v-col cols="12" sm="6" md="6" lg="6" class="text-right">
+    <v-col cols="12" sm="12" md="6" lg="6" class="text-right">
       <v-btn style="background-color: #bbccf6;color:#4d4d50" class="rounded-1 text-capitalize" variant="tonal">
         Show all
       </v-btn>
@@ -26,7 +26,7 @@
       <v-btn  style="background-color: #adc4fe" class="ml-5" ariant="tonal">
         <v-icon>mdi mdi-menu</v-icon>
       </v-btn>
-      <v-btn  variant="elevated">
+      <v-btn class="mr-5"  variant="elevated">
         <v-icon style="color: #0c5bda;">mdi mdi-microsoft-windows</v-icon>
       </v-btn>
     </v-col>
