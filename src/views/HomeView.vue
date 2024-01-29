@@ -64,7 +64,7 @@
           <v-card-text class="my-card-text" style="font-size: 16px;line-height: 24px; height: 85px;"> {{ item.name }}</v-card-text>
           <v-card-text class="mt-2" style="font-size: 24px;font-weight: 700;padding: auto;height: 36px;">
             ${{ item.price }} 
-            <span v-if="item.sale>0" style="font-size: 12px;float: right;min-width: 70px;min-height: 24px;padding: 2px;background-color: #e2f3e8;text-align: center;color: #1cee65;font-weight: 300;">
+            <span v-if="item.sale>0" style="margin-right: -1.5%;font-size: 12px;float: right;min-width: 70px;min-height: 24px;padding: 2px;background-color: #e2f3e8;text-align: center;color: #1cee65;font-weight: 300;">
               {{item.sale}}% OFF
             </span>
           </v-card-text>
